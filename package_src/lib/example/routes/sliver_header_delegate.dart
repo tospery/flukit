@@ -112,7 +112,7 @@ class SliverHeaderDelegateRoute extends StatelessWidget {
             child: Text(
               '搜索',
               style: TextStyle(color: Colors.white),
-              textScaleFactor: 1.1,
+              textScaler: TextScaler.linear(1.1),
             ),
           ),
           suffixIcon: IconButton(

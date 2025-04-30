@@ -76,9 +76,8 @@ class _QuickScrollBarState extends State<QuickScrollbar>
 
   @override
   Widget build(BuildContext context) {
-    ScrollController scrollController = widget.controller ??
-        PrimaryScrollController.of(context) ??
-        ScrollController();
+    ScrollController scrollController =
+        widget.controller ?? PrimaryScrollController.of(context);
 
     Widget stack = Stack(
       children: <Widget>[

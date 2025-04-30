@@ -26,9 +26,9 @@ class _DoneWidgetRouteState extends State<DoneWidgetRoute> {
             const Text('点击屏幕'),
             Visibility(
               visible: show,
-              child: Row(
+              child: const Row(
                 mainAxisSize: MainAxisSize.min,
-                children: const [
+                children: [
                   DoneWidget(outline: true),
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 12),

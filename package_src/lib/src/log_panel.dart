@@ -435,7 +435,8 @@ class LogPanel extends StatefulWidget {
         ),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 1),
-          child: Text('${logInfo.times}', textScaleFactor: 0.9),
+          child: Text('${logInfo.times}',
+              textScaler: const TextScaler.linear(0.9)),
         ),
       );
     }
@@ -638,7 +639,7 @@ class _LogPanelState extends State<LogPanel> {
                   padding: const EdgeInsets.symmetric(vertical: 14.0),
                   child: Text(
                     _canExpanded ? '向上拖动可增大日志显示空间' : '向下拖动可缩小日志显示空间',
-                    textScaleFactor: .9,
+                    textScaler: const TextScaler.linear(.9),
                     style: const TextStyle(color: Colors.grey),
                   ),
                 ),

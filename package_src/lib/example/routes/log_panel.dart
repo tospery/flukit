@@ -9,7 +9,7 @@ class LogListenerScopeRoute extends StatelessWidget {
     /* Use LogListenerScope as root widget for route */
     return LogListenerScope(
       logEmitter: getGlobalLogEmitter(),
-      child:const PageWithLogPanel(),
+      child: const PageWithLogPanel(),
     );
   }
 }
@@ -41,7 +41,8 @@ class _PageWithLogPanelState extends State<PageWithLogPanel> {
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(bottom: 20.0),
-                    child: Text('$_counter',textScaleFactor: 2),
+                    child: Text('$_counter',
+                        textScaler: const TextScaler.linear(2)),
                   ),
                   GradientButton(
                     onPressed: () {

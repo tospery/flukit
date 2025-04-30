@@ -22,8 +22,8 @@ class _SlideTransitionXRouteState extends State<SlideTransitionXRoute> {
           children: [
             ClipRect(child: wSwitcher(_score1)),
             const Padding(
-              padding: EdgeInsets.fromLTRB(10,0,10,5),
-              child: Text(':', textScaleFactor: 2),
+              padding: EdgeInsets.fromLTRB(10, 0, 10, 5),
+              child: Text(':', textScaler: TextScaler.linear(2)),
             ),
             ClipRect(child: wSwitcher(_score2)),
           ],
@@ -64,11 +64,10 @@ class _SlideTransitionXRouteState extends State<SlideTransitionXRoute> {
           child: Text(
             "$score",
             key: ValueKey<int>(score),
-            textScaleFactor: 3,
+            textScaler: const TextScaler.linear(3),
           ),
         ),
       ),
     );
   }
 }
-

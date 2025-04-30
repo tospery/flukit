@@ -33,6 +33,6 @@ class ExtraInfoBoxConstraints<T> extends BoxConstraints {
   @override
   int get hashCode {
     // ignore: deprecated_member_use
-    return hashValues(super.hashCode, extra);
+    return Object.hash(super.hashCode, extra);
   }
 }
